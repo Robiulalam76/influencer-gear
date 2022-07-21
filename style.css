@@ -62,7 +62,7 @@ banner-image {
     margin-bottom: 50px;
 }
 
-.top-banner h1 {
+.banner-title h1 {
     font-size: 40px;
     font-weight: 700;
     color: #3A3A3A;
@@ -137,6 +137,10 @@ hr {
     padding: 15px;
 }
 
+.product-thumbnail img {
+    width: 100%;
+}
+
 .product-thumbnail {
     width: 100%;
 }
@@ -202,6 +206,7 @@ a {
 
 /* Last Featured products section style add end */
 
+/* footer add start */
 footer {
     text-align: center;
     color: white;
@@ -217,3 +222,116 @@ footer {
     padding: 5px;
     margin: 0 10px;
 }
+
+/* footer add end */
+
+/* ===========Responsive Small device============ */
+@media only screen and (max-width: 688px) {
+
+    /* comon style feature change */
+    header {
+        display: none;
+    }
+
+    /* comon style feature change */
+
+    .container {
+        width: 100%;
+    }
+
+    /* top-banner section */
+    .top-banner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .banner-title,
+    .banner-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-title h1 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #3A3A3A;
+    }
+
+    /* top-banner section */
+
+    /* popular-collection */
+    .card-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-thumbnail img {
+        width: 100%;
+    }
+
+    /* popular-collection */
+
+    /* last featured product section */
+    .featured-products {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .feature-details {
+        text-align: center;
+    }
+
+    .feature-details p {
+        width: 100%;
+    }
+
+    /* last featured product section */
+}
+
+/* ===========Responsive Small device============ */
+
+/* ===========Tablet Device Responsive=========== */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+
+    /* comon style feature change */
+    header {
+        display: none;
+    }
+
+    /* comon style feature change */
+
+    /* popular-collection */
+    .card-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-thumbnail img {
+        width: 100%;
+    }
+
+    /* popular-collection */
+
+    /* last featured product section */
+    .featured-products {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .feature-details {
+        text-align: center;
+    }
+
+    .feature-details p {
+        width: 100%;
+    }
+
+    /* last featured product section */
+}
+
+/* ===========Tablet Device Responsive=========== */
