@@ -25,6 +25,7 @@ header {
 }
 
 .navbar {
+    margin: 8px;
     display: flex;
     justify-content: space-between;
 }
@@ -171,11 +172,13 @@ a {
 /* Last Featured products section style add start */
 .last-section {
     width: 90%;
-    margin-top: 70px;
+    position: relative;
+    top: 70px;
 }
 
 
 .featured-products {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,6 +288,10 @@ footer {
     }
 
     .feature-details p {
+        width: 100%;
+    }
+
+    .gear-image img {
         width: 100%;
     }
 
